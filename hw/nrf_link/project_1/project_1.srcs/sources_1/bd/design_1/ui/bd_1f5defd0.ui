@@ -1,0 +1,110 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.307285",
+   "Default View_TopLeft":"-1227,0",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port TX_CE -pg 1 -lvl 5 -x 1350 -y 860 -defaultsOSRD
+preplace port TX_MISO -pg 1 -lvl 0 -x 0 -y 810 -defaultsOSRD
+preplace port TX_MOSI -pg 1 -lvl 5 -x 1350 -y 820 -defaultsOSRD
+preplace port TX_SCLK -pg 1 -lvl 5 -x 1350 -y 800 -defaultsOSRD
+preplace port TX_IRQ -pg 1 -lvl 0 -x 0 -y 830 -defaultsOSRD
+preplace port CPU_RESETN -pg 1 -lvl 0 -x 0 -y 980 -defaultsOSRD
+preplace port RX_S_CE -pg 1 -lvl 5 -x 1350 -y 540 -defaultsOSRD
+preplace port RX_S_IRQ -pg 1 -lvl 0 -x 0 -y 530 -defaultsOSRD
+preplace port RX_S_MISO -pg 1 -lvl 0 -x 0 -y 510 -defaultsOSRD
+preplace port RX_S_MOSI -pg 1 -lvl 5 -x 1350 -y 520 -defaultsOSRD
+preplace port RX_S_SCLK -pg 1 -lvl 5 -x 1350 -y 500 -defaultsOSRD
+preplace port RX_D_CE -pg 1 -lvl 5 -x 1350 -y 180 -defaultsOSRD
+preplace port RX_D_IRQ -pg 1 -lvl 0 -x 0 -y 170 -defaultsOSRD
+preplace port RX_D_MISO -pg 1 -lvl 0 -x 0 -y 150 -defaultsOSRD
+preplace port RX_D_MOSI -pg 1 -lvl 5 -x 1350 -y 160 -defaultsOSRD
+preplace port RX_D_SCLK -pg 1 -lvl 5 -x 1350 -y 140 -defaultsOSRD
+preplace port TX_IRQ_out -pg 1 -lvl 5 -x 1350 -y 680 -defaultsOSRD
+preplace port RX_S_IRQ_out -pg 1 -lvl 5 -x 1350 -y 600 -defaultsOSRD
+preplace port RX_D_IRQ_out -pg 1 -lvl 5 -x 1350 -y 20 -defaultsOSRD
+preplace port TX_CE_out -pg 1 -lvl 5 -x 1350 -y 840 -defaultsOSRD
+preplace port AUD_SD -pg 1 -lvl 5 -x 1350 -y 320 -defaultsOSRD
+preplace port AUD_PWM -pg 1 -lvl 5 -x 1350 -y 300 -defaultsOSRD
+preplace port sys_clock -pg 1 -lvl 0 -x 0 -y 380 -defaultsOSRD
+preplace port UART_TXD_IN -pg 1 -lvl 0 -x 0 -y 1450 -defaultsOSRD
+preplace port UART_RXD_OUT -pg 1 -lvl 5 -x 1350 -y 1450 -defaultsOSRD
+preplace port M_CLK -pg 1 -lvl 5 -x 1350 -y 960 -defaultsOSRD
+preplace port M_DATA -pg 1 -lvl 0 -x 0 -y 960 -defaultsOSRD
+preplace port M_LRSEL -pg 1 -lvl 5 -x 1350 -y 980 -defaultsOSRD
+preplace port done -pg 1 -lvl 5 -x 1350 -y 1020 -defaultsOSRD
+preplace portBus TX_SS_N -pg 1 -lvl 5 -x 1350 -y 780 -defaultsOSRD
+preplace portBus LED -pg 1 -lvl 5 -x 1350 -y 1000 -defaultsOSRD
+preplace portBus RX_S_SS_N -pg 1 -lvl 5 -x 1350 -y 40 -defaultsOSRD
+preplace portBus RX_D_SS_N -pg 1 -lvl 5 -x 1350 -y 120 -defaultsOSRD
+preplace inst sine_sound_0 -pg 1 -lvl 3 -x 770 -y 320 -defaultsOSRD
+preplace inst pwm_0 -pg 1 -lvl 4 -x 1180 -y 300 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 120 -y 380 -defaultsOSRD
+preplace inst nRF_RX_D_0 -pg 1 -lvl 4 -x 1180 -y 130 -defaultsOSRD
+preplace inst nRF_TX_0 -pg 1 -lvl 4 -x 1180 -y 790 -defaultsOSRD
+preplace inst uart_0 -pg 1 -lvl 4 -x 1180 -y 1410 -defaultsOSRD
+preplace inst fifo_generator_TX -pg 1 -lvl 3 -x 770 -y 1280 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 2 -x 410 -y 1370 -defaultsOSRD
+preplace inst uart_driver_0 -pg 1 -lvl 2 -x 410 -y 1080 -defaultsOSRD
+preplace inst Controller_0 -pg 1 -lvl 3 -x 770 -y 660 -defaultsOSRD
+preplace inst microphone_0 -pg 1 -lvl 4 -x 1180 -y 990 -defaultsOSRD
+preplace inst nRF_RX_S_0 -pg 1 -lvl 4 -x 1180 -y 490 -defaultsOSRD
+preplace netloc rst_0_1 1 0 4 NJ 980 240 640 580 490 960
+preplace netloc SPI_Driver_0_ready 1 2 3 600 520 1010J 620 1320
+preplace netloc nRF_TX_0_CE 1 4 1 1330 840n
+preplace netloc nRF_TX_0_MOSI 1 4 1 NJ 820
+preplace netloc nRF_TX_0_SCLK 1 4 1 NJ 800
+preplace netloc nRF_TX_0_SS_N 1 4 1 NJ 780
+preplace netloc Controller_0_spi_en 1 3 1 970 620n
+preplace netloc MISO_1 1 0 4 NJ 810 NJ 810 NJ 810 NJ
+preplace netloc IRQ_1 1 0 5 NJ 830 NJ 830 NJ 830 1040 680 NJ
+preplace netloc Controller_0_nRF_RX_D_en 1 3 1 980 130n
+preplace netloc Controller_0_nRF_RX_S_en 1 3 1 990 490n
+preplace netloc nRF_RX_D_0_ready 1 2 3 590 390 970J 380 1320
+preplace netloc nRF_RX_S_0_ready 1 2 3 610 540 1000J 610 1320
+preplace netloc nRF_RX_S_0_CE 1 4 1 NJ 540
+preplace netloc IRQ_0_1 1 0 5 NJ 530 NJ 530 NJ 530 1040 600 NJ
+preplace netloc MISO_0_1 1 0 4 NJ 510 NJ 510 NJ 510 NJ
+preplace netloc nRF_RX_S_0_MOSI 1 4 1 NJ 520
+preplace netloc nRF_RX_S_0_SCLK 1 4 1 NJ 500
+preplace netloc nRF_RX_S_0_SS_N 1 4 1 N 40
+preplace netloc nRF_RX_D_0_CE 1 4 1 NJ 180
+preplace netloc IRQ_0_2 1 0 5 NJ 170 NJ 170 NJ 170 970 20 NJ
+preplace netloc MISO_0_2 1 0 4 NJ 150 NJ 150 NJ 150 NJ
+preplace netloc nRF_RX_D_0_MOSI 1 4 1 NJ 160
+preplace netloc nRF_RX_D_0_SCLK 1 4 1 NJ 140
+preplace netloc nRF_RX_D_0_SS_N 1 4 1 NJ 120
+preplace netloc clk_wiz_0_clk_out1 1 1 3 N 360 580 250 1030J
+preplace netloc pwm_0_AUD_SD 1 4 1 NJ 320
+preplace netloc pwm_0_AUD_PWM 1 4 1 NJ 300
+preplace netloc pwm_0_index 1 2 3 590 10 NJ 10 1330
+preplace netloc sine_sound_0_pwm_dc 1 3 1 N 320
+preplace netloc sys_clock_1 1 1 3 230 500 570 500 1020
+preplace netloc sys_clock_2 1 0 1 NJ 380
+preplace netloc UART_TXD_IN_1 1 0 4 NJ 1450 NJ 1450 NJ 1450 NJ
+preplace netloc uart_0_tx 1 4 1 NJ 1450
+preplace netloc uart_driver_0_tx_ena 1 2 2 NJ 1090 940
+preplace netloc uart_0_tx_busy 1 1 4 260 1180 580J 1130 NJ 1130 1320
+preplace netloc uart_driver_0_rd_en 1 2 1 560 1070n
+preplace netloc fifo_generator_TX_dout 1 2 2 610 1430 NJ
+preplace netloc fifo_generator_TX_empty 1 1 2 250 1290 NJ
+preplace netloc fifo_generator_TX_valid 1 1 3 260 980 NJ 980 930
+preplace netloc util_vector_logic_0_Res 1 2 1 NJ 1370
+preplace netloc microphone_0_wr_data 1 2 3 600 1100 NJ 1100 1330
+preplace netloc fifo_generator_TX_full 1 2 2 590 1040 N
+preplace netloc fifo_generator_TX_wr_ack 1 3 1 1040 1020n
+preplace netloc microphone_0_wr_en 1 2 3 610 1110 NJ 1110 1320
+preplace netloc microphone_0_M_CLK 1 4 1 NJ 960
+preplace netloc M_DATA_0_1 1 0 4 NJ 960 NJ 960 NJ 960 940J
+preplace netloc microphone_0_M_LRSEL 1 4 1 NJ 980
+preplace netloc Controller_0_microphone_en 1 3 1 950 700n
+preplace netloc clk_wiz_0_locked 1 1 3 220J 240 NJ 240 1040
+levelinfo -pg 1 0 120 410 770 1180 1350
+pagesize -pg 1 -db -bbox -sgen -150 0 1520 1510
+"
+}
+{
+   "da_board_cnt":"2",
+   "da_clkrst_cnt":"4"
+}
