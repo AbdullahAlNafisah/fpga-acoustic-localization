@@ -1,0 +1,344 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xD4C0BA00F29D2F62",
+      "device": "xc7a100tcsg324-1",
+      "gen_directory": "../../../../Master.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "clk_wiz_1": "",
+      "nRF_TX_0": "",
+      "Controller_0": ""
+    },
+    "ports": {
+      "sys_clock": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_sys_clock",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000"
+          }
+        }
+      },
+      "CPU_RESETN": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "CS_N": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "SCLK": {
+        "direction": "O"
+      },
+      "MOSI": {
+        "direction": "O"
+      },
+      "CE": {
+        "direction": "O"
+      },
+      "IRQ": {
+        "type": "intr",
+        "direction": "I",
+        "parameters": {
+          "PortWidth": {
+            "value": "1",
+            "value_src": "default_prop"
+          },
+          "SENSITIVITY": {
+            "value": "LEVEL_HIGH",
+            "value_src": "default"
+          }
+        }
+      },
+      "MISO": {
+        "direction": "I"
+      },
+      "IRQ_out": {
+        "direction": "O",
+        "parameters": {
+          "PortWidth": {
+            "value": "1",
+            "value_src": "default_prop"
+          },
+          "SENSITIVITY": {
+            "value": "LEVEL_HIGH",
+            "value_src": "default_prop"
+          }
+        }
+      },
+      "CE_out": {
+        "direction": "O"
+      },
+      "LED": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      }
+    },
+    "components": {
+      "clk_wiz_1": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "design_1_clk_wiz_1_0",
+        "xci_path": "ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xci",
+        "inst_hier_path": "clk_wiz_1",
+        "parameters": {
+          "CLK_IN1_BOARD_INTERFACE": {
+            "value": "sys_clock"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          },
+          "USE_LOCKED": {
+            "value": "false"
+          },
+          "USE_RESET": {
+            "value": "false"
+          }
+        }
+      },
+      "nRF_TX_0": {
+        "vlnv": "xilinx.com:module_ref:nRF_TX:1.0",
+        "xci_name": "design_1_nRF_TX_0_0",
+        "xci_path": "ip/design_1_nRF_TX_0_0/design_1_nRF_TX_0_0.xci",
+        "inst_hier_path": "nRF_TX_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "nRF_TX",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_1_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "nrst": {
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "LED": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "en": {
+            "direction": "I"
+          },
+          "ready": {
+            "direction": "O"
+          },
+          "MISO": {
+            "direction": "I"
+          },
+          "IRQ": {
+            "type": "intr",
+            "direction": "I",
+            "parameters": {
+              "SENSITIVITY": {
+                "value": "LEVEL_HIGH",
+                "value_src": "constant"
+              },
+              "PortWidth": {
+                "value": "1",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "CS_N": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "SCLK": {
+            "direction": "O"
+          },
+          "MOSI": {
+            "direction": "O"
+          },
+          "CE": {
+            "direction": "O"
+          }
+        }
+      },
+      "Controller_0": {
+        "vlnv": "xilinx.com:module_ref:Controller:1.0",
+        "xci_name": "design_1_Controller_0_0",
+        "xci_path": "ip/design_1_Controller_0_0/design_1_Controller_0_0.xci",
+        "inst_hier_path": "Controller_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Controller",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_1_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "nrst": {
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "LED": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "nRF_TX_rdy": {
+            "direction": "I"
+          },
+          "nRF_TX_en": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "clk_wiz_1_clk_out1": {
+        "ports": [
+          "clk_wiz_1/clk_out1",
+          "nRF_TX_0/clk",
+          "Controller_0/clk"
+        ]
+      },
+      "sys_clock_1": {
+        "ports": [
+          "sys_clock",
+          "clk_wiz_1/clk_in1"
+        ]
+      },
+      "CPU_RESETN_1": {
+        "ports": [
+          "CPU_RESETN",
+          "nRF_TX_0/nrst",
+          "Controller_0/nrst"
+        ]
+      },
+      "Controller_0_nRF_TX_en": {
+        "ports": [
+          "Controller_0/nRF_TX_en",
+          "nRF_TX_0/en"
+        ]
+      },
+      "nRF_TX_0_ready": {
+        "ports": [
+          "nRF_TX_0/ready",
+          "Controller_0/nRF_TX_rdy"
+        ]
+      },
+      "nRF_TX_0_CS_N": {
+        "ports": [
+          "nRF_TX_0/CS_N",
+          "CS_N"
+        ]
+      },
+      "nRF_TX_0_SCLK": {
+        "ports": [
+          "nRF_TX_0/SCLK",
+          "SCLK"
+        ]
+      },
+      "nRF_TX_0_MOSI": {
+        "ports": [
+          "nRF_TX_0/MOSI",
+          "MOSI"
+        ]
+      },
+      "nRF_TX_0_CE": {
+        "ports": [
+          "nRF_TX_0/CE",
+          "CE",
+          "CE_out"
+        ]
+      },
+      "IRQ_0_1": {
+        "ports": [
+          "IRQ",
+          "IRQ_out",
+          "nRF_TX_0/IRQ"
+        ]
+      },
+      "MISO_0_1": {
+        "ports": [
+          "MISO",
+          "nRF_TX_0/MISO"
+        ]
+      },
+      "nRF_TX_0_LED": {
+        "ports": [
+          "nRF_TX_0/LED",
+          "LED"
+        ]
+      }
+    }
+  }
+}
