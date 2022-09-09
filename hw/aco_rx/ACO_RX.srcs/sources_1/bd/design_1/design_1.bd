@@ -1,0 +1,810 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x4C4600D95FA1009C",
+      "device": "xc7a100tcsg324-1",
+      "gen_directory": "../../../../ACO_RX.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "Controller_0": "",
+      "microphone_0": "",
+      "clk_wiz": "",
+      "nRF_RX_D_0": "",
+      "UART": {
+        "util_vector_logic_0": "",
+        "uart_driver_0": "",
+        "fifo_generator_0": "",
+        "uart_0": ""
+      }
+    },
+    "ports": {
+      "UART_RXD_OUT": {
+        "direction": "O"
+      },
+      "UART_TXD_IN": {
+        "direction": "I"
+      },
+      "M_DATA": {
+        "direction": "I"
+      },
+      "M_CLK": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_microphone_0_0_M_CLK",
+            "value_src": "default_prop"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "M_LRSEL": {
+        "direction": "O"
+      },
+      "sys_clock": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_sys_clock",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000"
+          }
+        }
+      },
+      "CPU_RESETN": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "LED": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "CE": {
+        "direction": "O"
+      },
+      "CS_N": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "IRQ": {
+        "type": "intr",
+        "direction": "I",
+        "parameters": {
+          "PortWidth": {
+            "value": "1",
+            "value_src": "default_prop"
+          },
+          "SENSITIVITY": {
+            "value": "LEVEL_HIGH",
+            "value_src": "default"
+          }
+        }
+      },
+      "MISO": {
+        "direction": "I"
+      },
+      "MOSI": {
+        "direction": "O"
+      },
+      "SCLK": {
+        "direction": "O"
+      },
+      "IRQ_out": {
+        "direction": "O",
+        "parameters": {
+          "PortWidth": {
+            "value": "1",
+            "value_src": "default_prop"
+          },
+          "SENSITIVITY": {
+            "value": "LEVEL_HIGH",
+            "value_src": "default_prop"
+          }
+        }
+      },
+      "CE_out": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "Controller_0": {
+        "vlnv": "xilinx.com:module_ref:Controller:1.0",
+        "xci_name": "design_1_Controller_0_0",
+        "xci_path": "ip/design_1_Controller_0_0/design_1_Controller_0_0.xci",
+        "inst_hier_path": "Controller_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Controller",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "nrst": {
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "LED": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "nRF_RX_D_rdy": {
+            "direction": "I"
+          },
+          "nRF_RX_D_en": {
+            "direction": "O"
+          },
+          "microphone_en": {
+            "direction": "O"
+          }
+        }
+      },
+      "microphone_0": {
+        "vlnv": "xilinx.com:module_ref:microphone:1.0",
+        "xci_name": "design_1_microphone_0_0",
+        "xci_path": "ip/design_1_microphone_0_0/design_1_microphone_0_0.xci",
+        "inst_hier_path": "microphone_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "microphone",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "rst_n": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "en": {
+            "direction": "I"
+          },
+          "M_DATA": {
+            "direction": "I"
+          },
+          "M_CLK": {
+            "type": "clk",
+            "direction": "O"
+          },
+          "M_LRSEL": {
+            "direction": "O"
+          },
+          "wr_ack": {
+            "direction": "I"
+          },
+          "full": {
+            "direction": "I"
+          },
+          "wr_data": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "wr_en": {
+            "direction": "O"
+          }
+        }
+      },
+      "clk_wiz": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "design_1_clk_wiz_0",
+        "xci_path": "ip/design_1_clk_wiz_0/design_1_clk_wiz_0.xci",
+        "inst_hier_path": "clk_wiz",
+        "parameters": {
+          "CLK_IN1_BOARD_INTERFACE": {
+            "value": "sys_clock"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          },
+          "USE_LOCKED": {
+            "value": "false"
+          },
+          "USE_RESET": {
+            "value": "false"
+          }
+        }
+      },
+      "nRF_RX_D_0": {
+        "vlnv": "xilinx.com:module_ref:nRF_RX_D:1.0",
+        "xci_name": "design_1_nRF_RX_D_0_0",
+        "xci_path": "ip/design_1_nRF_RX_D_0_0/design_1_nRF_RX_D_0_0.xci",
+        "inst_hier_path": "nRF_RX_D_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "nRF_RX_D",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "nrst": {
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "LED": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "en": {
+            "direction": "I"
+          },
+          "ready": {
+            "direction": "O"
+          },
+          "MISO": {
+            "direction": "I"
+          },
+          "IRQ": {
+            "type": "intr",
+            "direction": "I",
+            "parameters": {
+              "SENSITIVITY": {
+                "value": "LEVEL_HIGH",
+                "value_src": "constant"
+              },
+              "PortWidth": {
+                "value": "1",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "CS_N": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "SCLK": {
+            "direction": "O"
+          },
+          "MOSI": {
+            "direction": "O"
+          },
+          "CE": {
+            "direction": "O"
+          }
+        }
+      },
+      "UART": {
+        "ports": {
+          "CPU_RESETN": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "din": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "wr_en": {
+            "direction": "I"
+          },
+          "full": {
+            "direction": "O"
+          },
+          "wr_ack": {
+            "direction": "O"
+          },
+          "UART_TXD_IN": {
+            "direction": "I"
+          },
+          "UART_RXD_OUT": {
+            "direction": "O"
+          }
+        },
+        "components": {
+          "util_vector_logic_0": {
+            "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+            "xci_name": "design_1_util_vector_logic_0_0",
+            "xci_path": "ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0.xci",
+            "inst_hier_path": "UART/util_vector_logic_0",
+            "parameters": {
+              "C_OPERATION": {
+                "value": "not"
+              },
+              "C_SIZE": {
+                "value": "1"
+              }
+            }
+          },
+          "uart_driver_0": {
+            "vlnv": "xilinx.com:module_ref:uart_driver:1.0",
+            "xci_name": "design_1_uart_driver_0_0",
+            "xci_path": "ip/design_1_uart_driver_0_0/design_1_uart_driver_0_0.xci",
+            "inst_hier_path": "UART/uart_driver_0",
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "uart_driver",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "FREQ_HZ": {
+                    "value": "100000000",
+                    "value_src": "ip_prop"
+                  },
+                  "PHASE": {
+                    "value": "0.0",
+                    "value_src": "ip_prop"
+                  },
+                  "CLK_DOMAIN": {
+                    "value": "/clk_wiz_clk_out1",
+                    "value_src": "ip_prop"
+                  }
+                }
+              },
+              "rst_n": {
+                "type": "rst",
+                "direction": "I",
+                "parameters": {
+                  "POLARITY": {
+                    "value": "ACTIVE_LOW",
+                    "value_src": "constant"
+                  }
+                }
+              },
+              "valid": {
+                "direction": "I"
+              },
+              "empty": {
+                "direction": "I"
+              },
+              "rd_en": {
+                "direction": "O"
+              },
+              "tx_busy": {
+                "direction": "I"
+              },
+              "tx_ena": {
+                "direction": "O"
+              }
+            }
+          },
+          "fifo_generator_0": {
+            "vlnv": "xilinx.com:ip:fifo_generator:13.2",
+            "xci_name": "design_1_fifo_generator_0_0",
+            "xci_path": "ip/design_1_fifo_generator_0_0/design_1_fifo_generator_0_0.xci",
+            "inst_hier_path": "UART/fifo_generator_0",
+            "parameters": {
+              "Fifo_Implementation": {
+                "value": "Common_Clock_Builtin_FIFO"
+              },
+              "Input_Data_Width": {
+                "value": "8"
+              },
+              "Input_Depth": {
+                "value": "2048"
+              },
+              "Valid_Flag": {
+                "value": "true"
+              },
+              "Write_Acknowledge_Flag": {
+                "value": "true"
+              }
+            }
+          },
+          "uart_0": {
+            "vlnv": "xilinx.com:module_ref:uart:1.0",
+            "xci_name": "design_1_uart_0_0",
+            "xci_path": "ip/design_1_uart_0_0/design_1_uart_0_0.xci",
+            "inst_hier_path": "UART/uart_0",
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "uart",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "FREQ_HZ": {
+                    "value": "100000000",
+                    "value_src": "ip_prop"
+                  },
+                  "PHASE": {
+                    "value": "0.0",
+                    "value_src": "ip_prop"
+                  },
+                  "CLK_DOMAIN": {
+                    "value": "/clk_wiz_clk_out1",
+                    "value_src": "ip_prop"
+                  }
+                }
+              },
+              "reset_n": {
+                "type": "rst",
+                "direction": "I"
+              },
+              "tx_ena": {
+                "direction": "I"
+              },
+              "tx_data": {
+                "direction": "I",
+                "left": "7",
+                "right": "0"
+              },
+              "rx": {
+                "direction": "I"
+              },
+              "rx_busy": {
+                "direction": "O"
+              },
+              "rx_error": {
+                "direction": "O"
+              },
+              "rx_data": {
+                "direction": "O",
+                "left": "7",
+                "right": "0"
+              },
+              "tx_busy": {
+                "direction": "O"
+              },
+              "tx": {
+                "direction": "O"
+              }
+            }
+          }
+        },
+        "nets": {
+          "util_vector_logic_0_Res": {
+            "ports": [
+              "util_vector_logic_0/Res",
+              "fifo_generator_0/rst"
+            ]
+          },
+          "fifo_generator_0_valid": {
+            "ports": [
+              "fifo_generator_0/valid",
+              "uart_driver_0/valid"
+            ]
+          },
+          "fifo_generator_0_empty": {
+            "ports": [
+              "fifo_generator_0/empty",
+              "uart_driver_0/empty"
+            ]
+          },
+          "uart_driver_0_rd_en": {
+            "ports": [
+              "uart_driver_0/rd_en",
+              "fifo_generator_0/rd_en"
+            ]
+          },
+          "uart_0_tx_busy": {
+            "ports": [
+              "uart_0/tx_busy",
+              "uart_driver_0/tx_busy"
+            ]
+          },
+          "uart_driver_0_tx_ena": {
+            "ports": [
+              "uart_driver_0/tx_ena",
+              "uart_0/tx_ena"
+            ]
+          },
+          "fifo_generator_0_dout": {
+            "ports": [
+              "fifo_generator_0/dout",
+              "uart_0/tx_data"
+            ]
+          },
+          "Net1": {
+            "ports": [
+              "CPU_RESETN",
+              "uart_driver_0/rst_n",
+              "uart_0/reset_n",
+              "util_vector_logic_0/Op1"
+            ]
+          },
+          "Net": {
+            "ports": [
+              "clk",
+              "uart_0/clk",
+              "fifo_generator_0/clk",
+              "uart_driver_0/clk"
+            ]
+          },
+          "microphone_0_wr_data": {
+            "ports": [
+              "din",
+              "fifo_generator_0/din"
+            ]
+          },
+          "microphone_0_wr_en": {
+            "ports": [
+              "wr_en",
+              "fifo_generator_0/wr_en"
+            ]
+          },
+          "fifo_generator_0_full": {
+            "ports": [
+              "fifo_generator_0/full",
+              "full"
+            ]
+          },
+          "fifo_generator_0_wr_ack": {
+            "ports": [
+              "fifo_generator_0/wr_ack",
+              "wr_ack"
+            ]
+          },
+          "rx_0_1": {
+            "ports": [
+              "UART_TXD_IN",
+              "uart_0/rx"
+            ]
+          },
+          "uart_0_tx": {
+            "ports": [
+              "uart_0/tx",
+              "UART_RXD_OUT"
+            ]
+          }
+        }
+      }
+    },
+    "nets": {
+      "Net": {
+        "ports": [
+          "clk_wiz/clk_out1",
+          "microphone_0/clk",
+          "Controller_0/clk",
+          "nRF_RX_D_0/clk",
+          "UART/clk"
+        ]
+      },
+      "Net1": {
+        "ports": [
+          "CPU_RESETN",
+          "microphone_0/rst_n",
+          "Controller_0/nrst",
+          "nRF_RX_D_0/nrst",
+          "UART/CPU_RESETN"
+        ]
+      },
+      "microphone_0_wr_data": {
+        "ports": [
+          "microphone_0/wr_data",
+          "UART/din"
+        ]
+      },
+      "microphone_0_wr_en": {
+        "ports": [
+          "microphone_0/wr_en",
+          "UART/wr_en"
+        ]
+      },
+      "uart_0_tx": {
+        "ports": [
+          "UART/UART_RXD_OUT",
+          "UART_RXD_OUT"
+        ]
+      },
+      "rx_0_1": {
+        "ports": [
+          "UART_TXD_IN",
+          "UART/UART_TXD_IN"
+        ]
+      },
+      "Controller_0_microphone_en": {
+        "ports": [
+          "Controller_0/microphone_en",
+          "microphone_0/en"
+        ]
+      },
+      "fifo_generator_0_wr_ack": {
+        "ports": [
+          "UART/wr_ack",
+          "microphone_0/wr_ack"
+        ]
+      },
+      "fifo_generator_0_full": {
+        "ports": [
+          "UART/full",
+          "microphone_0/full"
+        ]
+      },
+      "M_DATA_0_1": {
+        "ports": [
+          "M_DATA",
+          "microphone_0/M_DATA"
+        ]
+      },
+      "microphone_0_M_CLK": {
+        "ports": [
+          "microphone_0/M_CLK",
+          "M_CLK"
+        ]
+      },
+      "microphone_0_M_LRSEL": {
+        "ports": [
+          "microphone_0/M_LRSEL",
+          "M_LRSEL"
+        ]
+      },
+      "sys_clock_1": {
+        "ports": [
+          "sys_clock",
+          "clk_wiz/clk_in1"
+        ]
+      },
+      "Controller_0_nRF_RX_D_en": {
+        "ports": [
+          "Controller_0/nRF_RX_D_en",
+          "nRF_RX_D_0/en"
+        ]
+      },
+      "nRF_RX_D_0_ready": {
+        "ports": [
+          "nRF_RX_D_0/ready",
+          "Controller_0/nRF_RX_D_rdy"
+        ]
+      },
+      "nRF_RX_D_0_LED": {
+        "ports": [
+          "nRF_RX_D_0/LED",
+          "LED"
+        ]
+      },
+      "nRF_RX_D_0_CE": {
+        "ports": [
+          "nRF_RX_D_0/CE",
+          "CE",
+          "CE_out"
+        ]
+      },
+      "nRF_RX_D_0_CS_N": {
+        "ports": [
+          "nRF_RX_D_0/CS_N",
+          "CS_N"
+        ]
+      },
+      "IRQ_0_1": {
+        "ports": [
+          "IRQ",
+          "nRF_RX_D_0/IRQ",
+          "IRQ_out"
+        ]
+      },
+      "MISO_0_1": {
+        "ports": [
+          "MISO",
+          "nRF_RX_D_0/MISO"
+        ]
+      },
+      "nRF_RX_D_0_MOSI": {
+        "ports": [
+          "nRF_RX_D_0/MOSI",
+          "MOSI"
+        ]
+      },
+      "nRF_RX_D_0_SCLK": {
+        "ports": [
+          "nRF_RX_D_0/SCLK",
+          "SCLK"
+        ]
+      }
+    }
+  }
+}
