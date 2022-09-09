@@ -1,0 +1,52 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.601563",
+   "Default View_TopLeft":"-452,3",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port AUD_PWM -pg 1 -lvl 4 -x 880 -y 490 -defaultsOSRD
+preplace port AUD_SD -pg 1 -lvl 4 -x 880 -y 510 -defaultsOSRD
+preplace port CPU_RESETN -pg 1 -lvl 0 -x 0 -y 80 -defaultsOSRD
+preplace port CE -pg 1 -lvl 4 -x 880 -y 320 -defaultsOSRD
+preplace port IRQ -pg 1 -lvl 0 -x 0 -y 310 -defaultsOSRD
+preplace port MISO -pg 1 -lvl 0 -x 0 -y 290 -defaultsOSRD
+preplace port MOSI -pg 1 -lvl 4 -x 880 -y 300 -defaultsOSRD
+preplace port SCLK -pg 1 -lvl 4 -x 880 -y 280 -defaultsOSRD
+preplace port IRQ_out -pg 1 -lvl 4 -x 880 -y 380 -defaultsOSRD
+preplace port CE_out -pg 1 -lvl 4 -x 880 -y 340 -defaultsOSRD
+preplace port sys_clock -pg 1 -lvl 0 -x 0 -y 560 -defaultsOSRD
+preplace port SW -pg 1 -lvl 0 -x 0 -y 480 -defaultsOSRD
+preplace portBus CS_N -pg 1 -lvl 4 -x 880 -y 260 -defaultsOSRD
+preplace portBus LED -pg 1 -lvl 4 -x 880 -y 220 -defaultsOSRD
+preplace inst clk_wiz -pg 1 -lvl 1 -x 120 -y 560 -defaultsOSRD
+preplace inst nRF_RX_S_0 -pg 1 -lvl 3 -x 700 -y 270 -defaultsOSRD
+preplace inst pwm_0 -pg 1 -lvl 3 -x 700 -y 480 -defaultsOSRD
+preplace inst sine_sound_0 -pg 1 -lvl 2 -x 390 -y 550 -defaultsOSRD
+preplace inst Controller_0 -pg 1 -lvl 2 -x 390 -y 80 -defaultsOSRD
+preplace netloc clk_wiz_clk_out1 1 1 2 220 230 NJ
+preplace netloc clk_wiz_clk_out2 1 1 2 230 460 NJ
+preplace netloc sine_sound_0_pwm_dc 1 2 1 550 500n
+preplace netloc pwm_0_index 1 1 3 240 390 NJ 390 840
+preplace netloc pwm_0_AUD_PWM 1 3 1 NJ 490
+preplace netloc pwm_0_AUD_SD 1 3 1 NJ 510
+preplace netloc Controller_0_nRF_RX_S_en 1 2 1 550 90n
+preplace netloc CPU_RESETN_1 1 0 3 NJ 80 230 250 NJ
+preplace netloc nRF_RX_S_0_CE 1 3 1 860 320n
+preplace netloc nRF_RX_S_0_CS_N 1 3 1 NJ 260
+preplace netloc IRQ_0_1 1 0 4 NJ 310 NJ 310 560 160 850J
+preplace netloc nRF_RX_S_0_LED 1 3 1 NJ 220
+preplace netloc MISO_0_1 1 0 3 NJ 290 NJ 290 NJ
+preplace netloc nRF_RX_S_0_MOSI 1 3 1 NJ 300
+preplace netloc nRF_RX_S_0_SCLK 1 3 1 NJ 280
+preplace netloc nRF_RX_S_0_ready 1 1 3 240 160 540J 150 840
+preplace netloc sys_clock_1 1 0 1 NJ 560
+preplace netloc SW_1 1 0 3 NJ 480 NJ 480 NJ
+levelinfo -pg 1 0 120 390 700 880
+pagesize -pg 1 -db -bbox -sgen -150 0 1010 640
+"
+}
+{
+   "da_board_cnt":"4",
+   "da_clkrst_cnt":"2"
+}
