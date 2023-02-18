@@ -3,376 +3,149 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="FFT_MUL_TB_behav.wdb" id="1">
+      <db_ref path="DEMOD_TB_behav.wdb" id="1">
          <top_modules>
-            <top_module name="FFT_MUL_TB" />
+            <top_module name="DEMOD_TB" />
             <top_module name="glbl" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="360500001fs"></ZoomEndTime>
-      <Cursor1Time time="141000000fs"></Cursor1Time>
+      <ZoomEndTime time="42617813fs"></ZoomEndTime>
+      <Cursor1Time time="1000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="238"></NameColumnWidth>
-      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+      <NameColumnWidth column_width="232"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="48" />
-   <wvobject fp_name="/FFT_MUL_TB/uut/clk" type="logic">
+   <WVObjectSize size="32" />
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/rst_n" type="logic">
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/rst_n" type="logic">
       <obj_property name="ElementShortName">rst_n</obj_property>
       <obj_property name="ObjectShortName">rst_n</obj_property>
    </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/mic_data_in" type="array">
-      <obj_property name="ElementShortName">mic_data_in[11:0]</obj_property>
-      <obj_property name="ObjectShortName">mic_data_in[11:0]</obj_property>
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/mod_data" type="array">
+      <obj_property name="ElementShortName">mod_data[11:0]</obj_property>
+      <obj_property name="ObjectShortName">mod_data[11:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tvalid" type="logic">
-      <obj_property name="ElementShortName">A_m_B_axis_dout_tvalid</obj_property>
-      <obj_property name="ObjectShortName">A_m_B_axis_dout_tvalid</obj_property>
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/mod_data_tvalid" type="logic">
+      <obj_property name="ElementShortName">mod_data_tvalid</obj_property>
+      <obj_property name="ObjectShortName">mod_data_tvalid</obj_property>
    </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tlast" type="logic">
-      <obj_property name="ElementShortName">A_m_B_axis_dout_tlast</obj_property>
-      <obj_property name="ObjectShortName">A_m_B_axis_dout_tlast</obj_property>
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/mod_data_tready" type="logic">
+      <obj_property name="ElementShortName">mod_data_tready</obj_property>
+      <obj_property name="ObjectShortName">mod_data_tready</obj_property>
    </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tdata" type="array">
-      <obj_property name="ElementShortName">A_m_B_axis_dout_tdata[79:0]</obj_property>
-      <obj_property name="ObjectShortName">A_m_B_axis_dout_tdata[79:0]</obj_property>
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/demod_data" type="array">
+      <obj_property name="ElementShortName">demod_data[63:0]</obj_property>
+      <obj_property name="ObjectShortName">demod_data[63:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/mem_addra" type="array">
-      <obj_property name="ElementShortName">mem_addra[11:0]</obj_property>
-      <obj_property name="ObjectShortName">mem_addra[11:0]</obj_property>
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/demod_data_tvalid" type="logic">
+      <obj_property name="ElementShortName">demod_data_tvalid</obj_property>
+      <obj_property name="ObjectShortName">demod_data_tvalid</obj_property>
    </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/mem_addra_en" type="logic">
-      <obj_property name="ElementShortName">mem_addra_en</obj_property>
-      <obj_property name="ObjectShortName">mem_addra_en</obj_property>
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/phase_data_ram" type="array">
+      <obj_property name="ElementShortName">phase_data_ram[9:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">phase_data_ram[9:0][15:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/mem_douta_tvalid" type="logic">
-      <obj_property name="ElementShortName">mem_douta_tvalid</obj_property>
-      <obj_property name="ObjectShortName">mem_douta_tvalid</obj_property>
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/phase_data_addr" type="array">
+      <obj_property name="ElementShortName">phase_data_addr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">phase_data_addr[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/mem_douta" type="array">
-      <obj_property name="ElementShortName">mem_douta[11:0]</obj_property>
-      <obj_property name="ObjectShortName">mem_douta[11:0]</obj_property>
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/s_axis_phase_tvalid" type="logic">
+      <obj_property name="ElementShortName">s_axis_phase_tvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axis_phase_tvalid</obj_property>
    </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/mem_addra_d1" type="array">
-      <obj_property name="ElementShortName">mem_addra_d1[11:0]</obj_property>
-      <obj_property name="ObjectShortName">mem_addra_d1[11:0]</obj_property>
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/s_axis_phase_tdata" type="array">
+      <obj_property name="ElementShortName">s_axis_phase_tdata[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_phase_tdata[15:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/mem_douta_tlast" type="logic">
-      <obj_property name="ElementShortName">mem_douta_tlast</obj_property>
-      <obj_property name="ObjectShortName">mem_douta_tlast</obj_property>
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/m_axis_dout_tvalid" type="logic">
+      <obj_property name="ElementShortName">m_axis_dout_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axis_dout_tvalid</obj_property>
    </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/ram_s_axis_config_tdata" type="array">
-      <obj_property name="ElementShortName">ram_s_axis_config_tdata[15:0]</obj_property>
-      <obj_property name="ObjectShortName">ram_s_axis_config_tdata[15:0]</obj_property>
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/m_axis_dout_tdata" type="array">
+      <obj_property name="ElementShortName">m_axis_dout_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_dout_tdata[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/ram_s_axis_config_tvalid" type="logic">
-      <obj_property name="ElementShortName">ram_s_axis_config_tvalid</obj_property>
-      <obj_property name="ObjectShortName">ram_s_axis_config_tvalid</obj_property>
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/m_axis_dout_tdata_cos" type="array">
+      <obj_property name="ElementShortName">m_axis_dout_tdata_cos[15:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_dout_tdata_cos[15:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/ram_s_axis_config_tready" type="logic">
-      <obj_property name="ElementShortName">ram_s_axis_config_tready</obj_property>
-      <obj_property name="ObjectShortName">ram_s_axis_config_tready</obj_property>
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/m_axis_dout_tdata_sin" type="array">
+      <obj_property name="ElementShortName">m_axis_dout_tdata_sin[15:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_dout_tdata_sin[15:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/ram_s_axis_data_tdata" type="array">
-      <obj_property name="ElementShortName">ram_s_axis_data_tdata[31:0]</obj_property>
-      <obj_property name="ObjectShortName">ram_s_axis_data_tdata[31:0]</obj_property>
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/A_cos" type="array">
+      <obj_property name="ElementShortName">A_cos[15:0]</obj_property>
+      <obj_property name="ObjectShortName">A_cos[15:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/ram_s_axis_data_tvalid" type="logic">
-      <obj_property name="ElementShortName">ram_s_axis_data_tvalid</obj_property>
-      <obj_property name="ObjectShortName">ram_s_axis_data_tvalid</obj_property>
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/B_cos" type="array">
+      <obj_property name="ElementShortName">B_cos[15:0]</obj_property>
+      <obj_property name="ObjectShortName">B_cos[15:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/ram_s_axis_data_tlast" type="logic">
-      <obj_property name="ElementShortName">ram_s_axis_data_tlast</obj_property>
-      <obj_property name="ObjectShortName">ram_s_axis_data_tlast</obj_property>
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/P_cos" type="array">
+      <obj_property name="ElementShortName">P_cos[31:0]</obj_property>
+      <obj_property name="ObjectShortName">P_cos[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/ram_s_axis_data_tready" type="logic">
-      <obj_property name="ElementShortName">ram_s_axis_data_tready</obj_property>
-      <obj_property name="ObjectShortName">ram_s_axis_data_tready</obj_property>
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/A_sin" type="array">
+      <obj_property name="ElementShortName">A_sin[15:0]</obj_property>
+      <obj_property name="ObjectShortName">A_sin[15:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/ram_m_axis_data_tready" type="logic">
-      <obj_property name="ElementShortName">ram_m_axis_data_tready</obj_property>
-      <obj_property name="ObjectShortName">ram_m_axis_data_tready</obj_property>
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/B_sin" type="array">
+      <obj_property name="ElementShortName">B_sin[15:0]</obj_property>
+      <obj_property name="ObjectShortName">B_sin[15:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/ram_m_axis_data_tdata" type="array">
-      <obj_property name="ElementShortName">ram_m_axis_data_tdata[31:0]</obj_property>
-      <obj_property name="ObjectShortName">ram_m_axis_data_tdata[31:0]</obj_property>
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/P_sin" type="array">
+      <obj_property name="ElementShortName">P_sin[31:0]</obj_property>
+      <obj_property name="ObjectShortName">P_sin[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/ram_m_axis_data_tvalid" type="logic">
-      <obj_property name="ElementShortName">ram_m_axis_data_tvalid</obj_property>
-      <obj_property name="ObjectShortName">ram_m_axis_data_tvalid</obj_property>
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/mod_data_tvalid_reg" type="array">
+      <obj_property name="ElementShortName">mod_data_tvalid_reg[1:0]</obj_property>
+      <obj_property name="ObjectShortName">mod_data_tvalid_reg[1:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/ram_m_axis_data_tlast" type="logic">
-      <obj_property name="ElementShortName">ram_m_axis_data_tlast</obj_property>
-      <obj_property name="ObjectShortName">ram_m_axis_data_tlast</obj_property>
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/s_axis_data_tvalid_cos" type="logic">
+      <obj_property name="ElementShortName">s_axis_data_tvalid_cos</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tvalid_cos</obj_property>
    </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/ram_event_frame_started" type="logic">
-      <obj_property name="ElementShortName">ram_event_frame_started</obj_property>
-      <obj_property name="ObjectShortName">ram_event_frame_started</obj_property>
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/s_axis_data_tready_cos" type="logic">
+      <obj_property name="ElementShortName">s_axis_data_tready_cos</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tready_cos</obj_property>
    </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/ram_event_tlast_unexpected" type="logic">
-      <obj_property name="ElementShortName">ram_event_tlast_unexpected</obj_property>
-      <obj_property name="ObjectShortName">ram_event_tlast_unexpected</obj_property>
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/s_axis_data_tdata_cos" type="array">
+      <obj_property name="ElementShortName">s_axis_data_tdata_cos[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tdata_cos[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/ram_event_tlast_missing" type="logic">
-      <obj_property name="ElementShortName">ram_event_tlast_missing</obj_property>
-      <obj_property name="ObjectShortName">ram_event_tlast_missing</obj_property>
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/m_axis_data_tvalid_cos" type="logic">
+      <obj_property name="ElementShortName">m_axis_data_tvalid_cos</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tvalid_cos</obj_property>
    </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/ram_event_status_channel_halt" type="logic">
-      <obj_property name="ElementShortName">ram_event_status_channel_halt</obj_property>
-      <obj_property name="ObjectShortName">ram_event_status_channel_halt</obj_property>
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/m_axis_data_tdata_cos" type="array">
+      <obj_property name="ElementShortName">m_axis_data_tdata_cos[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tdata_cos[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/ram_event_data_in_channel_halt" type="logic">
-      <obj_property name="ElementShortName">ram_event_data_in_channel_halt</obj_property>
-      <obj_property name="ObjectShortName">ram_event_data_in_channel_halt</obj_property>
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/s_axis_data_tvalid_sin" type="logic">
+      <obj_property name="ElementShortName">s_axis_data_tvalid_sin</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tvalid_sin</obj_property>
    </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/ram_event_data_out_channel_halt" type="logic">
-      <obj_property name="ElementShortName">ram_event_data_out_channel_halt</obj_property>
-      <obj_property name="ObjectShortName">ram_event_data_out_channel_halt</obj_property>
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/s_axis_data_tready_sin" type="logic">
+      <obj_property name="ElementShortName">s_axis_data_tready_sin</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tready_sin</obj_property>
    </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/mic_s_axis_config_tdata" type="array">
-      <obj_property name="ElementShortName">mic_s_axis_config_tdata[15:0]</obj_property>
-      <obj_property name="ObjectShortName">mic_s_axis_config_tdata[15:0]</obj_property>
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/s_axis_data_tdata_sin" type="array">
+      <obj_property name="ElementShortName">s_axis_data_tdata_sin[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tdata_sin[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/mic_s_axis_config_tvalid" type="logic">
-      <obj_property name="ElementShortName">mic_s_axis_config_tvalid</obj_property>
-      <obj_property name="ObjectShortName">mic_s_axis_config_tvalid</obj_property>
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/m_axis_data_tvalid_sin" type="logic">
+      <obj_property name="ElementShortName">m_axis_data_tvalid_sin</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tvalid_sin</obj_property>
    </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/mic_s_axis_config_tready" type="logic">
-      <obj_property name="ElementShortName">mic_s_axis_config_tready</obj_property>
-      <obj_property name="ObjectShortName">mic_s_axis_config_tready</obj_property>
-   </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/mic_s_axis_data_tdata" type="array">
-      <obj_property name="ElementShortName">mic_s_axis_data_tdata[31:0]</obj_property>
-      <obj_property name="ObjectShortName">mic_s_axis_data_tdata[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/mic_s_axis_data_tvalid" type="logic">
-      <obj_property name="ElementShortName">mic_s_axis_data_tvalid</obj_property>
-      <obj_property name="ObjectShortName">mic_s_axis_data_tvalid</obj_property>
-   </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/mic_s_axis_data_tready" type="logic">
-      <obj_property name="ElementShortName">mic_s_axis_data_tready</obj_property>
-      <obj_property name="ObjectShortName">mic_s_axis_data_tready</obj_property>
-   </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/mic_s_axis_data_tlast" type="logic">
-      <obj_property name="ElementShortName">mic_s_axis_data_tlast</obj_property>
-      <obj_property name="ObjectShortName">mic_s_axis_data_tlast</obj_property>
-   </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/mic_m_axis_data_tready" type="logic">
-      <obj_property name="ElementShortName">mic_m_axis_data_tready</obj_property>
-      <obj_property name="ObjectShortName">mic_m_axis_data_tready</obj_property>
-   </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/mic_m_axis_data_tdata" type="array">
-      <obj_property name="ElementShortName">mic_m_axis_data_tdata[31:0]</obj_property>
-      <obj_property name="ObjectShortName">mic_m_axis_data_tdata[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/mic_m_axis_data_tdata_conj" type="array">
-      <obj_property name="ElementShortName">mic_m_axis_data_tdata_conj[31:0]</obj_property>
-      <obj_property name="ObjectShortName">mic_m_axis_data_tdata_conj[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/mic_m_axis_data_tvalid" type="logic">
-      <obj_property name="ElementShortName">mic_m_axis_data_tvalid</obj_property>
-      <obj_property name="ObjectShortName">mic_m_axis_data_tvalid</obj_property>
-   </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/mic_m_axis_data_tlast" type="logic">
-      <obj_property name="ElementShortName">mic_m_axis_data_tlast</obj_property>
-      <obj_property name="ObjectShortName">mic_m_axis_data_tlast</obj_property>
-   </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/mic_event_frame_started" type="logic">
-      <obj_property name="ElementShortName">mic_event_frame_started</obj_property>
-      <obj_property name="ObjectShortName">mic_event_frame_started</obj_property>
-   </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/mic_event_tlast_unexpected" type="logic">
-      <obj_property name="ElementShortName">mic_event_tlast_unexpected</obj_property>
-      <obj_property name="ObjectShortName">mic_event_tlast_unexpected</obj_property>
-   </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/mic_event_tlast_missing" type="logic">
-      <obj_property name="ElementShortName">mic_event_tlast_missing</obj_property>
-      <obj_property name="ObjectShortName">mic_event_tlast_missing</obj_property>
-   </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/mic_event_status_channel_halt" type="logic">
-      <obj_property name="ElementShortName">mic_event_status_channel_halt</obj_property>
-      <obj_property name="ObjectShortName">mic_event_status_channel_halt</obj_property>
-   </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/mic_event_data_in_channel_halt" type="logic">
-      <obj_property name="ElementShortName">mic_event_data_in_channel_halt</obj_property>
-      <obj_property name="ObjectShortName">mic_event_data_in_channel_halt</obj_property>
-   </wvobject>
-   <wvobject fp_name="/FFT_MUL_TB/uut/mic_event_data_out_channel_halt" type="logic">
-      <obj_property name="ElementShortName">mic_event_data_out_channel_halt</obj_property>
-      <obj_property name="ObjectShortName">mic_event_data_out_channel_halt</obj_property>
-   </wvobject>
-   <wvobject fp_name="vbus319" type="vbus">
-      <obj_property name="label">A_m_B_real</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
-      <obj_property name="CellHeight">100</obj_property>
-      <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tdata[39]" type="logic">
-         <obj_property name="ElementShortName">[39]</obj_property>
-         <obj_property name="ObjectShortName">[39]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tdata[38]" type="logic">
-         <obj_property name="ElementShortName">[38]</obj_property>
-         <obj_property name="ObjectShortName">[38]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tdata[37]" type="logic">
-         <obj_property name="ElementShortName">[37]</obj_property>
-         <obj_property name="ObjectShortName">[37]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tdata[36]" type="logic">
-         <obj_property name="ElementShortName">[36]</obj_property>
-         <obj_property name="ObjectShortName">[36]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tdata[35]" type="logic">
-         <obj_property name="ElementShortName">[35]</obj_property>
-         <obj_property name="ObjectShortName">[35]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tdata[34]" type="logic">
-         <obj_property name="ElementShortName">[34]</obj_property>
-         <obj_property name="ObjectShortName">[34]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tdata[33]" type="logic">
-         <obj_property name="ElementShortName">[33]</obj_property>
-         <obj_property name="ObjectShortName">[33]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tdata[32]" type="logic">
-         <obj_property name="ElementShortName">[32]</obj_property>
-         <obj_property name="ObjectShortName">[32]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tdata[31]" type="logic">
-         <obj_property name="ElementShortName">[31]</obj_property>
-         <obj_property name="ObjectShortName">[31]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tdata[30]" type="logic">
-         <obj_property name="ElementShortName">[30]</obj_property>
-         <obj_property name="ObjectShortName">[30]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tdata[29]" type="logic">
-         <obj_property name="ElementShortName">[29]</obj_property>
-         <obj_property name="ObjectShortName">[29]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tdata[28]" type="logic">
-         <obj_property name="ElementShortName">[28]</obj_property>
-         <obj_property name="ObjectShortName">[28]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tdata[27]" type="logic">
-         <obj_property name="ElementShortName">[27]</obj_property>
-         <obj_property name="ObjectShortName">[27]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tdata[26]" type="logic">
-         <obj_property name="ElementShortName">[26]</obj_property>
-         <obj_property name="ObjectShortName">[26]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tdata[25]" type="logic">
-         <obj_property name="ElementShortName">[25]</obj_property>
-         <obj_property name="ObjectShortName">[25]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tdata[24]" type="logic">
-         <obj_property name="ElementShortName">[24]</obj_property>
-         <obj_property name="ObjectShortName">[24]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tdata[23]" type="logic">
-         <obj_property name="ElementShortName">[23]</obj_property>
-         <obj_property name="ObjectShortName">[23]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tdata[22]" type="logic">
-         <obj_property name="ElementShortName">[22]</obj_property>
-         <obj_property name="ObjectShortName">[22]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tdata[21]" type="logic">
-         <obj_property name="ElementShortName">[21]</obj_property>
-         <obj_property name="ObjectShortName">[21]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tdata[20]" type="logic">
-         <obj_property name="ElementShortName">[20]</obj_property>
-         <obj_property name="ObjectShortName">[20]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tdata[19]" type="logic">
-         <obj_property name="ElementShortName">[19]</obj_property>
-         <obj_property name="ObjectShortName">[19]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tdata[18]" type="logic">
-         <obj_property name="ElementShortName">[18]</obj_property>
-         <obj_property name="ObjectShortName">[18]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tdata[17]" type="logic">
-         <obj_property name="ElementShortName">[17]</obj_property>
-         <obj_property name="ObjectShortName">[17]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tdata[16]" type="logic">
-         <obj_property name="ElementShortName">[16]</obj_property>
-         <obj_property name="ObjectShortName">[16]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tdata[15]" type="logic">
-         <obj_property name="ElementShortName">[15]</obj_property>
-         <obj_property name="ObjectShortName">[15]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tdata[14]" type="logic">
-         <obj_property name="ElementShortName">[14]</obj_property>
-         <obj_property name="ObjectShortName">[14]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tdata[13]" type="logic">
-         <obj_property name="ElementShortName">[13]</obj_property>
-         <obj_property name="ObjectShortName">[13]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tdata[12]" type="logic">
-         <obj_property name="ElementShortName">[12]</obj_property>
-         <obj_property name="ObjectShortName">[12]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tdata[11]" type="logic">
-         <obj_property name="ElementShortName">[11]</obj_property>
-         <obj_property name="ObjectShortName">[11]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tdata[10]" type="logic">
-         <obj_property name="ElementShortName">[10]</obj_property>
-         <obj_property name="ObjectShortName">[10]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tdata[9]" type="logic">
-         <obj_property name="ElementShortName">[9]</obj_property>
-         <obj_property name="ObjectShortName">[9]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tdata[8]" type="logic">
-         <obj_property name="ElementShortName">[8]</obj_property>
-         <obj_property name="ObjectShortName">[8]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tdata[7]" type="logic">
-         <obj_property name="ElementShortName">[7]</obj_property>
-         <obj_property name="ObjectShortName">[7]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tdata[6]" type="logic">
-         <obj_property name="ElementShortName">[6]</obj_property>
-         <obj_property name="ObjectShortName">[6]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tdata[5]" type="logic">
-         <obj_property name="ElementShortName">[5]</obj_property>
-         <obj_property name="ObjectShortName">[5]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tdata[4]" type="logic">
-         <obj_property name="ElementShortName">[4]</obj_property>
-         <obj_property name="ObjectShortName">[4]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tdata[3]" type="logic">
-         <obj_property name="ElementShortName">[3]</obj_property>
-         <obj_property name="ObjectShortName">[3]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tdata[2]" type="logic">
-         <obj_property name="ElementShortName">[2]</obj_property>
-         <obj_property name="ObjectShortName">[2]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tdata[1]" type="logic">
-         <obj_property name="ElementShortName">[1]</obj_property>
-         <obj_property name="ObjectShortName">[1]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/FFT_MUL_TB/uut/A_m_B_axis_dout_tdata[0]" type="logic">
-         <obj_property name="ElementShortName">[0]</obj_property>
-         <obj_property name="ObjectShortName">[0]</obj_property>
-      </wvobject>
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/m_axis_data_tdata_sin" type="array">
+      <obj_property name="ElementShortName">m_axis_data_tdata_sin[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tdata_sin[31:0]</obj_property>
    </wvobject>
 </wave_config>

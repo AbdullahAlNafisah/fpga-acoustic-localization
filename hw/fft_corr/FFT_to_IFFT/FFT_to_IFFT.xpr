@@ -3,10 +3,10 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="44" Path="C:/Users/hamay/Desktop/P250_FFT/project_1/.Xil/Vivado-8796-Hamayoun-Laptop/PrjAr/_X_/FFT_to_IFFT.xpr">
+<Project Version="7" Minor="44" Path="C:/Users/hamay/Desktop/P250_FFT/FFT_to_IFFT_V02/FFT_to_IFFT/.Xil/Vivado-14584-Hamayoun-Laptop/PrjAr/_X_/FFT_to_IFFT.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="44615e065ed0472e802c8a856debeae8"/>
+    <Option Name="Id" Val="f815b3df2ed341b696bdbf5263e7cda9"/>
     <Option Name="Part" Val="xc7a100tcsg324-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -18,7 +18,7 @@
     <Option Name="CompiledLibDirRiviera" Val="$PCACHEDIR/compile_simlib/riviera"/>
     <Option Name="CompiledLibDirActivehdl" Val="$PCACHEDIR/compile_simlib/activehdl"/>
     <Option Name="SimulatorLanguage" Val="Verilog"/>
-    <Option Name="BoardPart" Val="digilentinc.com:nexys-a7-100t:part0:1.2"/>
+    <Option Name="BoardPart" Val=""/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
@@ -30,20 +30,20 @@
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="nexys-a7-100t"/>
-    <Option Name="WTXSimLaunchSim" Val="24"/>
+    <Option Name="WTXSimLaunchSim" Val="40"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="4"/>
-    <Option Name="WTModelSimExportSim" Val="4"/>
-    <Option Name="WTQuestaExportSim" Val="4"/>
-    <Option Name="WTIesExportSim" Val="4"/>
-    <Option Name="WTVcsExportSim" Val="4"/>
-    <Option Name="WTRivieraExportSim" Val="4"/>
-    <Option Name="WTActivehdlExportSim" Val="4"/>
+    <Option Name="WTXSimExportSim" Val="17"/>
+    <Option Name="WTModelSimExportSim" Val="17"/>
+    <Option Name="WTQuestaExportSim" Val="17"/>
+    <Option Name="WTIesExportSim" Val="17"/>
+    <Option Name="WTVcsExportSim" Val="17"/>
+    <Option Name="WTRivieraExportSim" Val="17"/>
+    <Option Name="WTActivehdlExportSim" Val="17"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -59,10 +59,28 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sources_1/imports/P250_FFT/FFT_to_IFFT/FFT_to_IFFT.srcs/sources_1/new/DEMOD.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../FFT_to_IFFT/FFT_to_IFFT.srcs/sources_1/new/DEMOD.v"/>
+          <Attr Name="ImportTime" Val="1676716600"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/new/FFT_MULT.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../FFT_to_IFFT/FFT_to_IFFT.srcs/sources_1/new/FFT_MULT.v"/>
-          <Attr Name="ImportTime" Val="1675712011"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../FFT_to_IFFT.srcs/sources_1/new/FFT_MULT.v"/>
+          <Attr Name="ImportTime" Val="1675796817"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/P250_FFT/FFT_to_IFFT_V01/FFT_to_IFFT/FFT_to_IFFT.srcs/sources_1/new/DEMOD_FFT_MULT.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../FFT_to_IFFT_V01/FFT_to_IFFT/FFT_to_IFFT.srcs/sources_1/new/DEMOD_FFT_MULT.v"/>
+          <Attr Name="ImportTime" Val="1676716922"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -70,8 +88,20 @@
       </File>
       <File Path="$PSRCDIR/sources_1/COE/mem_data.coe">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../FFT_to_IFFT/FFT_to_IFFT.srcs/sources_1/COE/mem_data.coe"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../FFT_to_IFFT.srcs/sources_1/COE/mem_data.coe"/>
           <Attr Name="ImportTime" Val="1675701831"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/FFT_to_IFFT/archive_project_summary.txt">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../archive_project_summary.txt"/>
+          <Attr Name="ImportTime" Val="1676717323"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../Downloads/P250_FFT/FFT_to_IFFT_V01/FFT_to_IFFT/FFT_to_IFFT.srcs/sources_1/COE/mem_data.coe">
+        <FileInfo RelPath="Downloads/P250_FFT/FFT_to_IFFT_V01/FFT_to_IFFT/FFT_to_IFFT.srcs/sources_1/COE/mem_data.coe">
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -79,7 +109,7 @@
       <File Path="$PPRDIR/archive_project_summary.txt"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="FFT_MULT"/>
+        <Option Name="TopModule" Val="DEMOD_FFT_MULT"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
     </FileSet>
@@ -91,9 +121,19 @@
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
       <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sim_1/imports/new/DEMOD_TB.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../FFT_to_IFFT/FFT_to_IFFT.srcs/sim_1/new/DEMOD_TB.v"/>
+          <Attr Name="ImportTime" Val="1676716466"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sim_1/imports/P339_Encoder/FFT_MUL_TB.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Documents/ISE_Projects/P339_Encoder/FFT_MUL_TB.v"/>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../Documents/ISE_Projects/P339_Encoder/FFT_MUL_TB.v"/>
           <Attr Name="ImportTime" Val="1675702597"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -102,21 +142,21 @@
       </File>
       <File Path="$PSRCDIR/sim_1/imports/FFT_to_IFFT/FFT_MUL_TB_behav.wcfg">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../FFT_to_IFFT/FFT_MUL_TB_behav.wcfg"/>
-          <Attr Name="ImportTime" Val="1675712125"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../FFT_MUL_TB_behav.wcfg"/>
+          <Attr Name="ImportTime" Val="1675800745"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="FFT_MUL_TB"/>
+        <Option Name="TopModule" Val="DEMOD_TB"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
-        <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>
         <Option Name="SelectedSimModel" Val="rtl"/>
         <Option Name="SrcSet" Val="sources_1"/>
-        <Option Name="XSimWcfgFile" Val="$PPRDIR/../../../../../FFT_to_IFFT/FFT_MUL_TB_behav.wcfg"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/../../../../../../../../../../../../FFT_MUL_TB_behav.wcfg"/>
+        <Option Name="xsim.simulate.log_all_signals" Val="true"/>
       </Config>
     </FileSet>
     <FileSet Name="utils_1" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
@@ -125,26 +165,86 @@
         <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
     </FileSet>
-    <FileSet Name="blk_mem_gen_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/blk_mem_gen_0">
-      <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci">
+    <FileSet Name="cmpy_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/cmpy_0">
+      <File Path="$PSRCDIR/sources_1/ip/cmpy_0/cmpy_0.xci">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../FFT_to_IFFT/FFT_to_IFFT.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci"/>
-          <Attr Name="ImportTime" Val="1675701923"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../FFT_to_IFFT.srcs/sources_1/ip/cmpy_0/cmpy_0.xci"/>
+          <Attr Name="ImportTime" Val="1675707213"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <Config>
-        <Option Name="TopModule" Val="blk_mem_gen_0"/>
+        <Option Name="TopModule" Val="cmpy_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="xfft_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/xfft_1">
+      <File Path="$PSRCDIR/sources_1/ip/xfft_1/xfft_1.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../Downloads/P250_FFT/FFT_to_IFFT_V01/FFT_to_IFFT/FFT_to_IFFT.srcs/sources_1/ip/xfft_1/xfft_1.xci"/>
+          <Attr Name="ImportTime" Val="1675832967"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="xfft_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="cordic_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/cordic_0">
+      <File Path="$PSRCDIR/sources_1/ip/cordic_0/cordic_0.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../FFT_to_IFFT.srcs/sources_1/ip/cordic_0/cordic_0.xci"/>
+          <Attr Name="ImportTime" Val="1676717641"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="cordic_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="mult_gen_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/mult_gen_0">
+      <File Path="$PSRCDIR/sources_1/ip/mult_gen_0/mult_gen_0.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../FFT_to_IFFT.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci"/>
+          <Attr Name="ImportTime" Val="1676717926"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="mult_gen_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="fir_compiler_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fir_compiler_0">
+      <File Path="$PSRCDIR/sources_1/ip/fir_compiler_0/fir_compiler_0.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../FFT_to_IFFT.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.xci"/>
+          <Attr Name="ImportTime" Val="1676718360"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="fir_compiler_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
     <FileSet Name="xfft_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/xfft_0">
       <File Path="$PSRCDIR/sources_1/ip/xfft_0/xfft_0.xci">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../FFT_to_IFFT/FFT_to_IFFT.srcs/sources_1/ip/xfft_0/xfft_0.xci"/>
-          <Attr Name="ImportTime" Val="1675703997"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../FFT_to_IFFT.srcs/sources_1/ip/xfft_0/xfft_0.xci"/>
+          <Attr Name="ImportTime" Val="1675797023"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -155,18 +255,33 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="cmpy_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/cmpy_0">
-      <File Path="$PSRCDIR/sources_1/ip/cmpy_0/cmpy_0.xci">
+    <FileSet Name="mult_gen_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/mult_gen_1">
+      <File Path="$PSRCDIR/sources_1/ip/mult_gen_1/mult_gen_1.xci">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../FFT_to_IFFT/FFT_to_IFFT.srcs/sources_1/ip/cmpy_0/cmpy_0.xci"/>
-          <Attr Name="ImportTime" Val="1675707213"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../FFT_to_IFFT.srcs/sources_1/ip/mult_gen_1/mult_gen_1.xci"/>
+          <Attr Name="ImportTime" Val="1676720974"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <Config>
-        <Option Name="TopModule" Val="cmpy_0"/>
+        <Option Name="TopModule" Val="mult_gen_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="blk_mem_gen_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/blk_mem_gen_0">
+      <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../FFT_to_IFFT.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci"/>
+          <Attr Name="ImportTime" Val="1675701923"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="blk_mem_gen_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -199,7 +314,47 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="blk_mem_gen_0_synth_1" Type="Ft3:Synth" SrcSet="blk_mem_gen_0" Part="xc7a100tcsg324-1" ConstrsSet="blk_mem_gen_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/blk_mem_gen_0_synth_1" IncludeInArchive="true">
+    <Run Id="cmpy_0_synth_1" Type="Ft3:Synth" SrcSet="cmpy_0" Part="xc7a100tcsg324-1" ConstrsSet="cmpy_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/cmpy_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="xfft_1_synth_1" Type="Ft3:Synth" SrcSet="xfft_1" Part="xc7a100tcsg324-1" ConstrsSet="xfft_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/xfft_1_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="cordic_0_synth_1" Type="Ft3:Synth" SrcSet="cordic_0" Part="xc7a100tcsg324-1" ConstrsSet="cordic_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/cordic_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="mult_gen_0_synth_1" Type="Ft3:Synth" SrcSet="mult_gen_0" Part="xc7a100tcsg324-1" ConstrsSet="mult_gen_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/mult_gen_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="fir_compiler_0_synth_1" Type="Ft3:Synth" SrcSet="fir_compiler_0" Part="xc7a100tcsg324-1" ConstrsSet="fir_compiler_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/fir_compiler_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
         <Step Id="synth_design"/>
@@ -219,7 +374,17 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="cmpy_0_synth_1" Type="Ft3:Synth" SrcSet="cmpy_0" Part="xc7a100tcsg324-1" ConstrsSet="cmpy_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/cmpy_0_synth_1" IncludeInArchive="true">
+    <Run Id="mult_gen_1_synth_1" Type="Ft3:Synth" SrcSet="mult_gen_1" Part="xc7a100tcsg324-1" ConstrsSet="mult_gen_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/mult_gen_1_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="blk_mem_gen_0_synth_1" Type="Ft3:Synth" SrcSet="blk_mem_gen_0" Part="xc7a100tcsg324-1" ConstrsSet="blk_mem_gen_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/blk_mem_gen_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
         <Step Id="synth_design"/>
@@ -230,40 +395,6 @@
       <RQSFiles/>
     </Run>
     <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design" EnableStepBool="1"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="blk_mem_gen_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="blk_mem_gen_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="blk_mem_gen_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design" EnableStepBool="1"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="xfft_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="xfft_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="xfft_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
         <Step Id="init_design"/>
@@ -297,10 +428,127 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
+    <Run Id="xfft_1_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="xfft_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="xfft_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="cordic_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="cordic_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="cordic_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="mult_gen_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="mult_gen_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="mult_gen_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="fir_compiler_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="fir_compiler_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="fir_compiler_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="xfft_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="xfft_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="xfft_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="mult_gen_1_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="mult_gen_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="mult_gen_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="blk_mem_gen_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="blk_mem_gen_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="blk_mem_gen_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
   </Runs>
-  <Board>
-    <Jumpers/>
-  </Board>
+  <Board/>
   <DashboardSummary Version="1" Minor="0">
     <Dashboards>
       <Dashboard Name="default_dashboard">
