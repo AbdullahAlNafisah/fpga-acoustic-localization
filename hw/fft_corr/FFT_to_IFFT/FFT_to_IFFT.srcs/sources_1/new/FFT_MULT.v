@@ -25,20 +25,20 @@ module FFT_MULT (
     input         rst_n                  ,
     // input  [11:0] mic_data_in            ,
     // input         mic_data_in_valid      ,
-    input  [63:0] demod_data            ,
+    input  [23:0] demod_data            ,
     input         demod_data_tvalid      ,
     output        A_m_B_axis_dout_tvalid ,
     output        A_m_B_axis_dout_tlast  ,
-    output [79:0] A_m_B_axis_dout_tdata  ,
+    output [31:0] A_m_B_axis_dout_tdata  ,
     output        ifft_m_axis_data_tvalid,
     output        ifft_m_axis_data_tlast ,
-    output [79:0] ifft_m_axis_data_tdata
+    output [31:0] ifft_m_axis_data_tdata
 );
 //////////////////////////////////////////////////////////////////////////////////
     reg  [11:0] mem_addra        = 12'd0;
     wire        mem_addra_en            ;
     reg         mem_douta_tvalid = 1'd0 ;
-    wire [63:0] mem_douta               ;
+    wire [23:0] mem_douta               ;
     reg  [11:0] mem_addra_d1     = 12'd0;
     wire        mem_douta_tlast         ;
 
@@ -47,14 +47,14 @@ module FFT_MULT (
     reg         ram_s_axis_config_tvalid = 1'b0 ;
     wire        ram_s_axis_config_tready        ;
     ///////////////////////
-    wire [63:0] ram_s_axis_data_tdata ;
+    wire [31:0] ram_s_axis_data_tdata ;
     wire        ram_s_axis_data_tvalid;
     wire        ram_s_axis_data_tlast ;
     wire        ram_s_axis_data_tready;
     ///////////////////////
     reg ram_m_axis_data_tready = 1'b1;
     ///////////////////////
-    wire [63:0] ram_m_axis_data_tdata          ;
+    wire [31:0] ram_m_axis_data_tdata          ;
     wire        ram_m_axis_data_tvalid         ;
     wire        ram_m_axis_data_tlast          ;
     wire        ram_event_frame_started        ;
@@ -68,15 +68,15 @@ module FFT_MULT (
     reg         mic_s_axis_config_tvalid = 1'b0 ;
     wire        mic_s_axis_config_tready        ;
     ///////////////////////
-    wire [63:0] mic_s_axis_data_tdata ;
+    wire [31:0] mic_s_axis_data_tdata ;
     wire        mic_s_axis_data_tvalid;
     wire        mic_s_axis_data_tready;
     wire        mic_s_axis_data_tlast ;
     ///////////////////////
     reg mic_m_axis_data_tready = 1'b1;
     ///////////////////////
-    wire [63:0] mic_m_axis_data_tdata          ;
-    wire [63:0] mic_m_axis_data_tdata_conj     ;
+    wire [31:0] mic_m_axis_data_tdata          ;
+    wire [31:0] mic_m_axis_data_tdata_conj     ;
     wire        mic_m_axis_data_tvalid         ;
     wire        mic_m_axis_data_tlast          ;
     wire        mic_event_frame_started        ;
@@ -91,7 +91,7 @@ module FFT_MULT (
     wire        ifft_s_axis_config_tready          ;
     reg         ifft_s_axis_config_tready_d        ;
     ///////////////////////
-    wire [79:0] ifft_s_axis_data_tdata ;
+    wire [31:0] ifft_s_axis_data_tdata ;
     wire        ifft_s_axis_data_tvalid;
     wire        ifft_s_axis_data_tready;
     wire        ifft_s_axis_data_tlast ;
@@ -113,17 +113,18 @@ module FFT_MULT (
 
     assign ram_s_axis_data_tvalid = mem_douta_tvalid;
     assign ram_s_axis_data_tlast  = mem_douta_tlast;
-    assign ram_s_axis_data_tdata  = mem_douta;
+    assign ram_s_axis_data_tdata  = {{4{0}},mem_douta[23:12],{4{0}},mem_douta[11:0]};
+    // assign ram_s_axis_data_tdata  = mem_douta;
     // assign ram_s_axis_data_tdata  = {32'd0,{20{0}},mem_douta[11:0]};
     // assign ram_s_axis_data_tdata  = {16'd0,{5{mem_douta[11]}},mem_douta[10:0]};
     ///////////////////////
     assign mic_s_axis_data_tvalid = mem_douta_tvalid;
     assign mic_s_axis_data_tlast  = mem_douta_tlast;
     // assign mic_s_axis_data_tdata  = {16'd0,{4{0}},mic_data_in[11:0]};
-    assign mic_s_axis_data_tdata  = demod_data;
+    assign mic_s_axis_data_tdata  = {{4{0}},demod_data[23:12],{4{0}},demod_data[11:0]};
     // assign mic_s_axis_data_tdata  = {16'd0,{5{mic_data_in[11]}},mic_data_in[10:0]};
     ///////////////////////
-    assign mic_m_axis_data_tdata_conj = {(~mic_m_axis_data_tdata[63:32] + 1'b1),mic_m_axis_data_tdata[31:0]};
+    assign mic_m_axis_data_tdata_conj = {(~mic_m_axis_data_tdata[31:16] + 1'b1),mic_m_axis_data_tdata[15:0]};
     ///////////////////////
     assign ifft_s_axis_config_tvalid = ~ifft_s_axis_config_tready_d && ifft_s_axis_config_tready;
     ///////////////////////

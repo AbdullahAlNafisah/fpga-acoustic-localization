@@ -12,140 +12,52 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="42617813fs"></ZoomEndTime>
-      <Cursor1Time time="1000000fs"></Cursor1Time>
+      <ZoomEndTime time="1498000001fs"></ZoomEndTime>
+      <Cursor1Time time="42375000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="232"></NameColumnWidth>
+      <NameColumnWidth column_width="224"></NameColumnWidth>
       <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="32" />
-   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/clk" type="logic">
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_FFT_MULT/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
-   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/rst_n" type="logic">
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_FFT_MULT/rst_n" type="logic">
       <obj_property name="ElementShortName">rst_n</obj_property>
       <obj_property name="ObjectShortName">rst_n</obj_property>
    </wvobject>
-   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/mod_data" type="array">
-      <obj_property name="ElementShortName">mod_data[11:0]</obj_property>
-      <obj_property name="ObjectShortName">mod_data[11:0]</obj_property>
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_FFT_MULT/demod_data" type="array">
+      <obj_property name="ElementShortName">demod_data[23:0]</obj_property>
+      <obj_property name="ObjectShortName">demod_data[23:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/mod_data_tvalid" type="logic">
-      <obj_property name="ElementShortName">mod_data_tvalid</obj_property>
-      <obj_property name="ObjectShortName">mod_data_tvalid</obj_property>
-   </wvobject>
-   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/mod_data_tready" type="logic">
-      <obj_property name="ElementShortName">mod_data_tready</obj_property>
-      <obj_property name="ObjectShortName">mod_data_tready</obj_property>
-   </wvobject>
-   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/demod_data" type="array">
-      <obj_property name="ElementShortName">demod_data[63:0]</obj_property>
-      <obj_property name="ObjectShortName">demod_data[63:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/demod_data_tvalid" type="logic">
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_FFT_MULT/demod_data_tvalid" type="logic">
       <obj_property name="ElementShortName">demod_data_tvalid</obj_property>
       <obj_property name="ObjectShortName">demod_data_tvalid</obj_property>
    </wvobject>
-   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/phase_data_ram" type="array">
-      <obj_property name="ElementShortName">phase_data_ram[9:0][15:0]</obj_property>
-      <obj_property name="ObjectShortName">phase_data_ram[9:0][15:0]</obj_property>
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_FFT_MULT/A_m_B_axis_dout_tvalid" type="logic">
+      <obj_property name="ElementShortName">A_m_B_axis_dout_tvalid</obj_property>
+      <obj_property name="ObjectShortName">A_m_B_axis_dout_tvalid</obj_property>
    </wvobject>
-   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/phase_data_addr" type="array">
-      <obj_property name="ElementShortName">phase_data_addr[3:0]</obj_property>
-      <obj_property name="ObjectShortName">phase_data_addr[3:0]</obj_property>
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_FFT_MULT/A_m_B_axis_dout_tlast" type="logic">
+      <obj_property name="ElementShortName">A_m_B_axis_dout_tlast</obj_property>
+      <obj_property name="ObjectShortName">A_m_B_axis_dout_tlast</obj_property>
    </wvobject>
-   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/s_axis_phase_tvalid" type="logic">
-      <obj_property name="ElementShortName">s_axis_phase_tvalid</obj_property>
-      <obj_property name="ObjectShortName">s_axis_phase_tvalid</obj_property>
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_FFT_MULT/A_m_B_axis_dout_tdata" type="array">
+      <obj_property name="ElementShortName">A_m_B_axis_dout_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">A_m_B_axis_dout_tdata[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/s_axis_phase_tdata" type="array">
-      <obj_property name="ElementShortName">s_axis_phase_tdata[15:0]</obj_property>
-      <obj_property name="ObjectShortName">s_axis_phase_tdata[15:0]</obj_property>
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_FFT_MULT/ifft_m_axis_data_tvalid" type="logic">
+      <obj_property name="ElementShortName">ifft_m_axis_data_tvalid</obj_property>
+      <obj_property name="ObjectShortName">ifft_m_axis_data_tvalid</obj_property>
    </wvobject>
-   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/m_axis_dout_tvalid" type="logic">
-      <obj_property name="ElementShortName">m_axis_dout_tvalid</obj_property>
-      <obj_property name="ObjectShortName">m_axis_dout_tvalid</obj_property>
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_FFT_MULT/ifft_m_axis_data_tlast" type="logic">
+      <obj_property name="ElementShortName">ifft_m_axis_data_tlast</obj_property>
+      <obj_property name="ObjectShortName">ifft_m_axis_data_tlast</obj_property>
    </wvobject>
-   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/m_axis_dout_tdata" type="array">
-      <obj_property name="ElementShortName">m_axis_dout_tdata[31:0]</obj_property>
-      <obj_property name="ObjectShortName">m_axis_dout_tdata[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/m_axis_dout_tdata_cos" type="array">
-      <obj_property name="ElementShortName">m_axis_dout_tdata_cos[15:0]</obj_property>
-      <obj_property name="ObjectShortName">m_axis_dout_tdata_cos[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/m_axis_dout_tdata_sin" type="array">
-      <obj_property name="ElementShortName">m_axis_dout_tdata_sin[15:0]</obj_property>
-      <obj_property name="ObjectShortName">m_axis_dout_tdata_sin[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/A_cos" type="array">
-      <obj_property name="ElementShortName">A_cos[15:0]</obj_property>
-      <obj_property name="ObjectShortName">A_cos[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/B_cos" type="array">
-      <obj_property name="ElementShortName">B_cos[15:0]</obj_property>
-      <obj_property name="ObjectShortName">B_cos[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/P_cos" type="array">
-      <obj_property name="ElementShortName">P_cos[31:0]</obj_property>
-      <obj_property name="ObjectShortName">P_cos[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/A_sin" type="array">
-      <obj_property name="ElementShortName">A_sin[15:0]</obj_property>
-      <obj_property name="ObjectShortName">A_sin[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/B_sin" type="array">
-      <obj_property name="ElementShortName">B_sin[15:0]</obj_property>
-      <obj_property name="ObjectShortName">B_sin[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/P_sin" type="array">
-      <obj_property name="ElementShortName">P_sin[31:0]</obj_property>
-      <obj_property name="ObjectShortName">P_sin[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/mod_data_tvalid_reg" type="array">
-      <obj_property name="ElementShortName">mod_data_tvalid_reg[1:0]</obj_property>
-      <obj_property name="ObjectShortName">mod_data_tvalid_reg[1:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/s_axis_data_tvalid_cos" type="logic">
-      <obj_property name="ElementShortName">s_axis_data_tvalid_cos</obj_property>
-      <obj_property name="ObjectShortName">s_axis_data_tvalid_cos</obj_property>
-   </wvobject>
-   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/s_axis_data_tready_cos" type="logic">
-      <obj_property name="ElementShortName">s_axis_data_tready_cos</obj_property>
-      <obj_property name="ObjectShortName">s_axis_data_tready_cos</obj_property>
-   </wvobject>
-   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/s_axis_data_tdata_cos" type="array">
-      <obj_property name="ElementShortName">s_axis_data_tdata_cos[31:0]</obj_property>
-      <obj_property name="ObjectShortName">s_axis_data_tdata_cos[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/m_axis_data_tvalid_cos" type="logic">
-      <obj_property name="ElementShortName">m_axis_data_tvalid_cos</obj_property>
-      <obj_property name="ObjectShortName">m_axis_data_tvalid_cos</obj_property>
-   </wvobject>
-   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/m_axis_data_tdata_cos" type="array">
-      <obj_property name="ElementShortName">m_axis_data_tdata_cos[31:0]</obj_property>
-      <obj_property name="ObjectShortName">m_axis_data_tdata_cos[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/s_axis_data_tvalid_sin" type="logic">
-      <obj_property name="ElementShortName">s_axis_data_tvalid_sin</obj_property>
-      <obj_property name="ObjectShortName">s_axis_data_tvalid_sin</obj_property>
-   </wvobject>
-   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/s_axis_data_tready_sin" type="logic">
-      <obj_property name="ElementShortName">s_axis_data_tready_sin</obj_property>
-      <obj_property name="ObjectShortName">s_axis_data_tready_sin</obj_property>
-   </wvobject>
-   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/s_axis_data_tdata_sin" type="array">
-      <obj_property name="ElementShortName">s_axis_data_tdata_sin[31:0]</obj_property>
-      <obj_property name="ObjectShortName">s_axis_data_tdata_sin[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/m_axis_data_tvalid_sin" type="logic">
-      <obj_property name="ElementShortName">m_axis_data_tvalid_sin</obj_property>
-      <obj_property name="ObjectShortName">m_axis_data_tvalid_sin</obj_property>
-   </wvobject>
-   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_DEMOD/m_axis_data_tdata_sin" type="array">
-      <obj_property name="ElementShortName">m_axis_data_tdata_sin[31:0]</obj_property>
-      <obj_property name="ObjectShortName">m_axis_data_tdata_sin[31:0]</obj_property>
+   <wvobject fp_name="/DEMOD_TB/i_DEMOD_FFT_MULT/i_FFT_MULT/ifft_m_axis_data_tdata" type="array">
+      <obj_property name="ElementShortName">ifft_m_axis_data_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ifft_m_axis_data_tdata[31:0]</obj_property>
    </wvobject>
 </wave_config>

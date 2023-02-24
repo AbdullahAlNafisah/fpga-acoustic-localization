@@ -21,53 +21,53 @@
 
 
 module DEMOD_FFT_MULT (
-    input                clk            ,
-    input                rst_n          ,
-    input         [11:0] mod_data       ,
-    input                mod_data_tvalid,
-    output               mod_data_tready,
-    output signed [80:0] sqrd_out       ,
-    output               sqrd_out_tvalid,
-    output               sqrd_out_tlast
+    input         clk            ,
+    input         rst_n          ,
+    input  [11:0] mod_data       ,
+    input         mod_data_tvalid,
+    output        mod_data_tready,
+    output [32:0] sqrd_out       ,
+    output        sqrd_out_tvalid,
+    output        sqrd_out_tlast
 );
 //////////////////////////////////////////////////////////////////////////////////
-    wire [63:0] demod_data       ;
+    wire [23:0] demod_data       ;
     wire        demod_data_tvalid;
 
-    wire        A_m_B_axis_dout_tvalid;
-    wire        A_m_B_axis_dout_tlast ;
-    wire [79:0] A_m_B_axis_dout_tdata ;
+    wire        ifft_m_axis_data_tvalid;
+    wire        ifft_m_axis_data_tlast ;
+    wire [31:0] ifft_m_axis_data_tdata ;
 
-    wire signed [39:0] A_real;
-    wire signed [39:0] B_real;
-    wire signed [79:0] P_real;
+    wire signed [15:0] A_real;
+    wire signed [15:0] B_real;
+    wire        [31:0] P_real;
 
-    wire [39:0] A_imag;
-    wire [39:0] B_imag;
-    wire [79:0] P_imag;
+    wire signed [15:0] A_imag;
+    wire signed [15:0] B_imag;
+    wire        [31:0] P_imag;
 
-    reg A_m_B_axis_dout_tlast_reg = 1'b0;
-    reg A_m_B_axis_dout_tvalid_reg = 1'b0;
+    reg ifft_m_axis_data_tlast_reg  = 1'b0;
+    reg ifft_m_axis_data_tvalid_reg = 1'b0;
 
 //////////////////////////////////////////////////////////////////////////////////
-    assign A_real = A_m_B_axis_dout_tdata[39:0];
-    assign B_real = A_m_B_axis_dout_tdata[39:0];
+    assign A_real = ifft_m_axis_data_tdata[15:0];
+    assign B_real = ifft_m_axis_data_tdata[15:0];
 
-    assign A_imag = A_m_B_axis_dout_tdata[79:40];
-    assign B_imag = A_m_B_axis_dout_tdata[79:40];
+    assign A_imag = ifft_m_axis_data_tdata[31:16];
+    assign B_imag = ifft_m_axis_data_tdata[31:16];
 
-    assign sqrd_out = P_real + P_imag;
-    assign sqrd_out_tvalid = A_m_B_axis_dout_tvalid_reg;
-    assign sqrd_out_tlast = A_m_B_axis_dout_tlast_reg;
+    assign sqrd_out        = P_real + P_imag;
+    assign sqrd_out_tvalid = ifft_m_axis_data_tvalid_reg;
+    assign sqrd_out_tlast  = ifft_m_axis_data_tlast_reg;
 //////////////////////////////////////////////////////////////////////////////////
 
-    always @(posedge clk or negedge rst_n) begin : proc_A_m_B_axis_dout_tlast_reg
+    always @(posedge clk or negedge rst_n) begin : proc_ifft_m_axis_data_tlast_reg
         if(~rst_n) begin
-            A_m_B_axis_dout_tlast_reg <= 0;
-            A_m_B_axis_dout_tvalid_reg <= 0;
+            ifft_m_axis_data_tlast_reg  <= 0;
+            ifft_m_axis_data_tvalid_reg <= 0;
         end else begin
-            A_m_B_axis_dout_tlast_reg <= A_m_B_axis_dout_tlast;
-            A_m_B_axis_dout_tvalid_reg <= A_m_B_axis_dout_tvalid;
+            ifft_m_axis_data_tlast_reg  <= ifft_m_axis_data_tlast;
+            ifft_m_axis_data_tvalid_reg <= ifft_m_axis_data_tvalid;
         end
     end
 //////////////////////////////////////////////////////////////////////////////////
@@ -83,15 +83,14 @@ module DEMOD_FFT_MULT (
     );
 //////////////////////////////////////////////////////////////////////////////////
 
-
     FFT_MULT i_FFT_MULT (
-        .clk                   (clk                   ),
-        .rst_n                 (rst_n                 ),
-        .demod_data            (demod_data            ),
-        .demod_data_tvalid     (demod_data_tvalid     ),
-        .A_m_B_axis_dout_tvalid(A_m_B_axis_dout_tvalid),
-        .A_m_B_axis_dout_tlast (A_m_B_axis_dout_tlast ),
-        .A_m_B_axis_dout_tdata (A_m_B_axis_dout_tdata )
+        .clk                    (clk                    ),
+        .rst_n                  (rst_n                  ),
+        .demod_data             (demod_data             ),
+        .demod_data_tvalid      (demod_data_tvalid      ),
+        .ifft_m_axis_data_tvalid(ifft_m_axis_data_tvalid),
+        .ifft_m_axis_data_tlast (ifft_m_axis_data_tlast ),
+        .ifft_m_axis_data_tdata (ifft_m_axis_data_tdata )
     );
 
 //////////////////////////////////////////////////////////////////////////////////
