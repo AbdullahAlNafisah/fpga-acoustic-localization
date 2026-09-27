@@ -100,7 +100,6 @@ These files keep their original headers and terms:
 - `crc_gen.v`, `packet_gen.sv`, `ethernet_header_pkg.sv` and the other Ethernet and PDM files in `hw/aco_rx_eth`: HDL for Beginners
 - `microphone_driver.v` and the seven-segment modules: Digilent (Tudor Roxana-Ioana)
 - `pmod_da2.vhd`: Afia Semin; `sd_driver.vhd`: Ben Wolsieffer (Dartmouth ENGS 31)
-- `matlab/zc_tools/tx_gen_v2.m`: Mohammed AlSharif
 
 Authorship of every source file is in its header.
 

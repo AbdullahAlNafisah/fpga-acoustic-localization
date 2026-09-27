@@ -1,5 +1,5 @@
 %%%%%%%%% ZC Generation and Normalization %%%%%%%%%%%%%%%
-[a, b, tx,seq_r, seq_i] = tx_gen_v2(4096, 1, 1, 200000, 20000);
+[a, b, tx,seq_r, seq_i] = zc_seq(4096, 1, 1);
 tx_pos = tx - min(tx); %% all between 0 and 2
 tx_norm = (tx_pos/(max(tx_pos))).*(2^12 - 1); %% all between 0 and 4095
 %seq_r = seq_r - min(seq_r);
