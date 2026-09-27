@@ -54,7 +54,7 @@ def title(ax, t, text):
 
 def save(fig, name, mode):
     os.makedirs(OUT, exist_ok=True)
-    fig.savefig(os.path.join(OUT, f"{name}-{mode}.svg"), transparent=True, bbox_inches="tight")
+    fig.savefig(os.path.join(OUT, f"{name}-{mode}.svg"), transparent=True, bbox_inches="tight", metadata={"Date": None})
     plt.close(fig)
 
 
@@ -233,7 +233,7 @@ def resources(mode):
 
 
 if __name__ == "__main__":
-    plt.rcParams.update({"font.family": "DejaVu Sans", "font.weight": "normal", "svg.fonttype": "none"})
+    plt.rcParams.update({"font.family": "DejaVu Sans", "font.weight": "normal", "svg.fonttype": "none", "svg.hashsalt": "figures"})
     for mode in THEMES:
         signal_chain(mode)
         accuracy(mode)
