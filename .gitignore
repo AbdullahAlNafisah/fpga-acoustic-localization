@@ -1,0 +1,21 @@
+# Vivado generated output
+*.cache/
+*.gen/
+*.hw/
+*.runs/
+*.sim/
+*.ip_user_files/
+.Xil/
+*.jou
+*.log
+*.str
+*.backup.*
+
+# MATLAB
+*.asv
+*.mex*
+codegen/
+
+# Python
+.ipynb_checkpoints/
+__pycache__/
